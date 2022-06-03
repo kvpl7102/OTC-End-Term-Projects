@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <i id="prev" onclick="showImage(-1)" class="fas fa-chevron-left"></i>
+        <i id="next" onclick="showImage(1)" class="fas fa-chevron-right"></i>
+
+        <div id="cancel-btn">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+
+    <div class="dots"></div>
+
+    <button onclick="defaultBtnActive()" id="custom-btn">
+        Upload an image!
+    </button>
+    <input type="file" id="img-input" accept="image/jpeg, image/jpg, image/png" hidden>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
